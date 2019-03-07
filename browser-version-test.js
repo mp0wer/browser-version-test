@@ -1,2 +1,3 @@
-const browser = window.Bowser.getParser(window.navigator.userAgent);
+const Bowser = module.exports;
+const browser = Bowser.getParser(window.navigator.userAgent);
 alert(`Browser "${browser.getBrowserName()}", version "${browser.getBrowserVersion()}"`);
